@@ -10,7 +10,7 @@ h1{
     font-size: 60px;
 }
 
-.container{
+.container1{
     border: 1px solid#EDCCA8;
     background-color: #EDCCA8;
     margin-top:20px;
@@ -18,7 +18,7 @@ h1{
     margin-right: 300px;
 }
 
-.box{
+.box1{
     padding-bottom: 300px;
     margin-left: 10px;
 }
@@ -40,4 +40,38 @@ h3{
 img {
     margin-top:-60px;
     margin-right:60px;
+}
+
+.container2{
+    border: 1px solid#f7eee5;
+    background-color: #f7eee5;
+    margin-top:20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.box2{
+    padding-top:30px;
+    padding-bottom: 30px;
+    margin-left: 60px;
+}
+
+.container3{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.box3{
+    padding-bottom: 30px;
+    margin-left: 60px;
+}
+
+.container4{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.box4{
+    padding-bottom: 30px;
+    margin-left: 60px;
 }
