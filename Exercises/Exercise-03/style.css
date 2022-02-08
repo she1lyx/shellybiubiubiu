@@ -1,6 +1,6 @@
 body{
     background-color: #fedccc;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color:white;
     margin-left:5%;
     margin-right:5%;
@@ -10,26 +10,30 @@ em{
     color:white
 }
 
-h1, strong{
+h1{
+    color:darksalmon;
+    font-family: 'Anton', sans-serif;
+}
+
+strong{
     color:darksalmon
 }
 
 .eng{
-    width:40%;
+    width:45%;
     margin-left:2%;
     margin-right:2%;
-    display:inline-block;
     vertical-align:top;
     text-align:justify;
+    float: left;
+    margin-top: 54px
 }
 
 .spn{
-    width:40%;
+    width:45%;
     margin-left:2%;
     margin-right:2%;
     vertical-align:top;
     text-align:justify;
     float: right;
-    margin-top: 0
 }
-
