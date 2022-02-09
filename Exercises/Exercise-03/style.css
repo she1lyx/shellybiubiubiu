@@ -26,7 +26,8 @@ strong{
     vertical-align:top;
     text-align:justify;
     float: left;
-    margin-top: 54px
+    margin-top: 54px;
+    line-height: 1.68;
 }
 
 .spn{
@@ -36,4 +37,11 @@ strong{
     vertical-align:top;
     text-align:justify;
     float: right;
+    line-height: 1.68;
+}
+
+.pullquote{
+    color:darksalmon;
+    font:italic;
+    font-size:150%
 }
