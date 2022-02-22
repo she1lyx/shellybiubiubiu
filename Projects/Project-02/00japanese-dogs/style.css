@@ -6,9 +6,9 @@
 
 .japanesedogs img{
     position: absolute;
-    left: 35%;
-    width:800px;
-    height:800px;
+    left: 31%;
+    width:900px;
+    height:900px;
 }
 
 body{
@@ -16,14 +16,13 @@ body{
 }
 
 #grid-container{
-
     width: 80%;
     display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     display: block;
-    margin-top: 800px;
+    margin-top: 900px;
     margin-left:300px
 }
 
@@ -34,7 +33,7 @@ body{
 }
 
 .hoverWrapper img{
-    width: 200px
+    width: 180px
 }
 
 
@@ -47,7 +46,7 @@ body{
 .hoverWrapper div{
     position: absolute;
     margin-top: -10px;
-    margin-left: -45px;
+    margin-left: -60px;
     color: black;
     font-family: sans-serif;
     font-size: 20px;
