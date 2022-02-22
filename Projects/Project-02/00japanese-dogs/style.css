@@ -6,9 +6,10 @@
 
 .japanesedogs img{
     position: absolute;
-    left: 31%;
-    width:900px;
-    height:900px;
+    left: 30%;
+    width: 40%
+    /* width:900px;
+    height:900px; */
 }
 
 body{
@@ -22,7 +23,7 @@ body{
     grid-row-gap: 20px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     display: block;
-    margin-top: 900px;
+    margin-top: 42%;
     margin-left:300px
 }
 
