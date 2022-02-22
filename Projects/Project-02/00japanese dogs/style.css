@@ -1,0 +1,66 @@
+.back{
+    text-decoration: none;
+    color:darkgray;
+    font-family: 'Oswald', sans-serif;
+}
+
+.japanesedogs img{
+    width:800px;
+    height:800px;
+    margin-left: 300px;
+}
+
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+
+#grid-container{
+
+    width: 80%;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    display: block;
+    margin-left: 200px;
+}
+
+.grid-item{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hoverWrapper img{
+    width: 200px
+}
+
+
+.hoverWrapper{
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.hoverWrapper div{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -45px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hoverWrapper:hover{
+    cursor: pointer;
+}
+
+.hoverWrapper:hover div{
+    width: 300px;
+    visibility: visible;
+    opacity: 0.7; 
+}

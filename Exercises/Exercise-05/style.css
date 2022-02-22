@@ -1,0 +1,136 @@
+body{
+    background-color: #fedccc;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+em{
+    color:white
+}
+
+h1{
+    color:darksalmon;
+    font-family: 'Anton', sans-serif;
+    transition:font-size 1s, font-style 1s, background-color 1s;
+}
+
+strong{
+    color:darksalmon
+}
+
+main{
+    display:flex;
+    margin-top:20px;
+    width: 100%;
+}
+
+.eng{
+    width:50%;
+    margin-right:2%;
+    padding:2%;
+    line-height: 1.68;
+}
+
+.spn{
+    width:50%;
+    margin-left:2%;
+    padding:2%;
+    line-height: 1.68;
+}
+
+.pullquote{
+    color:darksalmon;
+    font:italic;
+    font-size:150%
+}
+
+.back{
+    color:darksalmon;
+    text-decoration:none;
+}
+
+h5{
+    color:darksalmon
+}
+
+.paragraphOne{
+    width: 100%;
+    height: 10%;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+}
+
+.paragraphOne:hover{
+    width: 100%;
+    height: 15%;
+    border: 3px solid #B89F93;
+    background-color:#EBCBBC;
+    font-size: 20px;
+    color:#6B6B6B;
+}
+
+.paragraphTwo{
+    width:100%;
+    height:30%;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+}
+
+.paragraphTwo:hover{
+    width: 100%;
+    height: 41%;
+    border: 3px solid #B89F93;
+    background-color:#EBCBBC;
+    font-size: 20px;
+    color:#6B6B6B;
+}
+
+.paragraphThree{
+    width:100%;
+    height:20%;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+}
+
+.paragraphThree:hover{
+    width: 100%;
+    height: 28%;
+    border: 3px solid #B89F93;
+    background-color:#EBCBBC;
+    font-size: 20px;
+    color:#6B6B6B;
+}
+
+.paragraphFour{
+    width:100%;
+    height:10%;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+}
+
+.paragraphFour:hover{
+    width: 100%;
+    height: 15%;
+    border: 3px solid #B89F93;
+    background-color:#EBCBBC;
+    font-size: 20px;
+    color:#6B6B6B;
+}
+
+.paragraphThreee{
+    width:100%;
+    height:22%;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+}
+
+.paragraphThreee:hover{
+    width: 100%;
+    height: 31%;
+    border: 3px solid #B89F93;
+    background-color:#EBCBBC;
+    font-size: 20px;
+    color:#6B6B6B;
+}
