@@ -1,15 +1,18 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
 .back{
     text-decoration: none;
     color:darkgray;
     font-family: 'Oswald', sans-serif;
 }
 
-.japanesedogs img{
-    position: absolute;
-    left: 30%;
-    width: 40%
-    /* width:900px;
-    height:900px; */
+html,
+body{
+    height:100%;
 }
 
 body{
@@ -23,7 +26,7 @@ body{
     grid-row-gap: 20px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     display: block;
-    margin-top: 42%;
+    margin-top: 25%;
     margin-left:300px
 }
 
