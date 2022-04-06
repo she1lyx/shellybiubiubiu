@@ -1,0 +1,14 @@
+body{
+    background-color: #fedccc;
+    font-family: 'Oswald', sans-serif;
+    color:darksalmon;
+}
+
+a{
+    text-decoration: none;
+}
+
+.back{
+    color:darksalmon;
+    text-decoration:none;
+}
