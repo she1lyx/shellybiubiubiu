@@ -19,6 +19,56 @@ body{
     font-family: 'Libre Baskerville', serif;
 }
 
+.search {
+    display: flex;
+}
+
+.search > div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px black);
+}
+
+.search > div:after {
+    content: "";
+    background: whitesmoke;
+    width: 4px;
+    height: 15px;
+    position: absolute;
+    top: 35px;
+    right: -1px;
+    transform: rotate(135deg);
+}
+  
+.search > div > input {
+    color: black;
+    font-size: 16px;
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: solid 3px whitesmoke;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+    margin-top: 8px;
+}
+
+.search > div > input::placeholder {
+    color: grey;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+  
+.search > div > input:focus::placeholder {
+    opacity: 1;
+  }
+  
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+    width: 250px;
+}
+
 .filter{
     margin-left: 10px;
     font-family: 'Oswald', sans-serif;

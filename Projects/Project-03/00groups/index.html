@@ -14,16 +14,19 @@
 <body>
     <div><a class="back" href="../../../Exercises/Exercise-01/index.html">Back to Home</a></div>
     
-    <p class="filter">
-        Filter By ▼
-    </p>
+    <div class="search">
+        <p class="filter">Filter By ▼</p>    
+        <div>
+            <input class="filter" type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..." title="Type in a name"> 
+        </div> 
+    </div>
 
     <div id="grid-container">
         <div class="grid-container-inner grid">
             <a class="grid-item" href="../01P_G/index.html">
                 <div class="hoverWrapper">
                     <img class="group-image" src="../images/01_P&G/1P&G.png">
-                    <div>P&G</div>
+                    <div class="hidden">P&G</div>
                 </div>
             </a>
             <a class="grid-item" href="../02Estee_Lauder/index.html">
@@ -94,4 +97,5 @@
             </a>
         </div>
     </div>
+    <script src="script.js"></script> 
 </body>
