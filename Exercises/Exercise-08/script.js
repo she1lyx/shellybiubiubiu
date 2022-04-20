@@ -17,23 +17,31 @@ let lightsalmonBtn = document.getElementById("lightsalmonButton");
 
 function switchToGray() {
   let body = document.querySelector("body");
+  let back = document.querySelector(".back");
   body.style.backgroundColor = "gray";
   body.style.color = "white";
+  back.style.color = "white";
 }
 function switchToWhite() {
   let body = document.querySelector("body");
+  let back = document.querySelector(".back");
   body.style.backgroundColor = "white";
   body.style.color = "salmon";
+  back.style.color = "salmon";
 }
 function switchToSalmon() {
   let body = document.querySelector("body");
+  let back = document.querySelector(".back");
   body.style.backgroundColor = "salmon";
   body.style.color = "#fedccc";
+  back.style.color = "#fedccc";
 }
 function switchToLightSalmon() {
   let body = document.querySelector("body");
+  let back = document.querySelector(".back");
   body.style.backgroundColor = "#fedccc";
   body.style.color = "gray";
+  back.style.color = "gray";
 }
 
 // 2 -- Add an event listener to each circle
