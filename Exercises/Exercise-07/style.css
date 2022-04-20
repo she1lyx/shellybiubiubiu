@@ -1,0 +1,151 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+body {
+    background-color: #fedccc;
+    font-family: 'Oswald', sans-serif;
+    color:darksalmon;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; 
+    width: 100%;
+}
+
+main { 
+    display: block;
+}
+
+.poem {
+    display: flex; 
+    flex-direction: row;
+    justify-content: left;
+    line-height: 98%;
+    font-family: 'Anton', sans-serif;
+    font-size: 5em; 
+    position: static; 
+}
+
+.navigation {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    height: 60px; 
+    font-family: 'Oswald', sans-serif;
+    position: static; 
+}
+
+.poem, footer {
+    padding: 5px; 
+}
+
+footer { 
+    display: block;
+}
+
+.refresh {
+    font-size: 20px;
+    width: 30%; 
+    text-align: left;
+    line-height: 60px;
+}
+
+.back {
+    font-size: 20px;
+    width: 30%;
+    text-align: right;
+    line-height: 60px;
+}
+
+a:link {
+    color:darksalmon;
+    text-decoration: none;
+}
+
+a:visited {
+    color:darksalmon;
+}
+
+a:hover {
+    font-style: italic;
+    color: white;
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .refresh {
+        font-size:2em;
+    }
+    
+    .back {
+        font-size:2em;
+    }
+}
+
+@media (max-width: 1023px) {
+    .poem {
+        font-size:6em;
+    }
+
+    .refresh {
+        font-size:1em;
+    }
+    
+    .back {
+        font-size:1em;
+    }
+}
+
+@media (max-width: 612px) {
+    .poem {
+        font-size:4em;
+    }
+
+    .refresh {
+        font-size:1em;
+    }
+    
+    .back {
+        font-size:1em;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .poem {
+        font-size:3em;
+    }
+
+    .navigation {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .refresh {
+        line-height:30px;
+        font-size:1em;
+        width:100%;
+    }
+    
+    .back {
+        line-height:30px;
+        font-size:1em;
+        width:100%;
+        text-align:left;
+    }
+}
