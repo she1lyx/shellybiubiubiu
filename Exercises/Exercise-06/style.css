@@ -16,6 +16,50 @@ body{
     height:100%;
 }
 
+nav {
+    height: 60px;
+}
+
+ul.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+    list-style: none;
+    background: darksalmon;
+    margin: 0;
+    line-height: 60px;
+}
+  
+.container a {
+text-decoration: none;
+color: #F4F4F4;
+}
+
+li {
+padding: 0 40px;
+}
+
+li:hover {
+animation: navlinkcolors 2s ease-in-out .2s;
+}
+
+@keyframes navlinkcolors {
+0% {
+    background-color: darksalmon;
+}
+40% {
+    background-color: #CF846B;
+}
+60% {
+    background-color: #A66A56;
+}
+100% {
+    background-color: darksalmon;
+}
+
+}
+
 a{
     text-decoration: none;
 }
