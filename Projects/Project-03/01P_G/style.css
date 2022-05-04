@@ -7,3 +7,129 @@
 body{
     font-family: 'Libre Baskerville', serif;
 }
+
+.search {
+    display: flex;
+}
+
+.search > div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px black);
+}
+
+.search > div:after {
+    content: "";
+    background: whitesmoke;
+    width: 4px;
+    height: 15px;
+    position: absolute;
+    top: 35px;
+    right: -1px;
+    transform: rotate(135deg);
+}
+  
+.search > div > input {
+    color: black;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: solid 3px whitesmoke;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+    margin-top: 8px;
+}
+
+.search > div > input::placeholder {
+    color: red;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+  
+.search > div > input:focus::placeholder {
+    opacity: 1;
+  }
+  
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+    width: 250px;
+}
+
+.filter{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#grid-container{
+    display: flex;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    justify-content: center;
+    margin-top: 5%;
+} 
+
+.grid-item{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.grid-item img{
+    max-width: 130px;
+    max-height: 130px;
+}
+
+
+.grid-item{
+    position: relative;
+    float:inline-start;
+    margin-right: 100px;
+}
+
+.grid-item div{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -80px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#myUL {
+    list-style-type: none;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+}
+
+.grid-item:hover div{
+    width: 300px;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    grid-gap: 4%; 
+    grid-auto-flow: row;
+}
+
+.grid>a{
+    color: #fff;
+    font-size: 50px;
+    line-height: 2;
+    text-align: center;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skincare and Cosmetics Group Brand</title>
+    <title>Skincare and Cosmetics grid-item Brand</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400&display=swap" rel="stylesheet"> 
@@ -15,87 +15,159 @@
     <div><a class="back" href="../../../Exercises/Exercise-01/index.html">Back to Home</a></div>
     
     <div class="search">
-        <p class="filter">Filter By ▼</p>    
-        <div>
+        <button class="filter" id="filter-button">Filter By ▼</button> 
+        <div id="myBtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
             <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
         </div> 
     </div>
 
     <div id="grid-container">
         <div class="grid-container-inner grid">
-            <a class="grid-item" href="../01P_G/index.html">
-                <div class="hoverWrapper">
-                    <img class="group-image" src="../images/01_P&G/1P&G.png">
-                    <div class="hidden">P&G</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../02Estee_Lauder/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/02_Estée_Lauder/2Estée_Lauder.png" alt="">
-                    <div class="hidden">Estée Lauder</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../03Shiseido/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/03_Shiseido/3Shiseido.png" alt="">
-                    <div class="hidden">Shiseido</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../04Loreal/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/04_Loreal/4Loreal.png" alt="">
-                    <div class="hidden">L'oréal</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../05LVMH/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/05_LVMH/5LVMH.png" alt="">
-                    <div class="hidden">LVMH</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../06Chanel/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/06_Chanel/6Chanel.png" alt="">
-                    <div class="hidden">CHANEL</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../07PPR/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/07_PPR/7PPR.png" alt="">
-                    <div class="hidden">PPR</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../08Amore_Pacific/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/08_Amore_Pacific/8Amore_Pacific.png" alt="">
-                    <div class="hidden">Amore Pacific</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../09LG/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/09_LG/9LG.png" alt="">
-                    <div class="hidden">LG</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../10Unilever/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/10_Unilever/10Unilever.png" alt="">
-                    <div class="hidden">Unilever</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../11POLA/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/11_POLA/11POLA.png" alt="">
-                    <div class="hidden">POLA</div>
-                </div>
-            </a>
-            <a class="grid-item" href="../12Beiersdorf/index.html">
-                <div class="hoverWrapper">
-                    <img class="brand-image" src="../images/12_Beiersdorf/12Beiersdorf.png" alt="">
-                    <div class="hidden">Beiersdorf</div>
-                </div>
-            </a>
+            <div class="hoverWrapper">
+                <ul id="myUL">
+                    <li class="grid-item first second cos perfume body mens">
+                        <a href="../01P_G/index.html">
+                            <img class="brand-image" src="../images/01_P&G/1P&G.png" alt="">
+                            <div class="hidden">
+                                P&G
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first second third cos perfume"> 
+                        <a href="../02Estee_Lauder/index.html">
+                            <img class="brand-image" src="../images/02_Estée_Lauder/2Estée_Lauder.png" alt="">
+                            <div class="hidden">
+                                Estée Lauder
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first second mass cos perfume mens">
+                        <a href="../03Shiseido/index.html">
+                            <img class="brand-image" src="../images/03_Shiseido/3Shiseido.png" alt="">
+                            <div class="hidden">
+                                Shiseido
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first second third cos perfume body ccs oral">
+                        <a href="../04Loreal/index.html">
+                            <img class="brand-image" src="../images/04_Loreal/4Loreal.png" alt="">
+                            <div class="hidden">
+                                L'oréal
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first cos perfume body"> 
+                        <a href="../05LVMH/index.html">
+                            <img class="brand-image" src="../images/05_LVMH/5LVMH.png" alt="">
+                            <div class="hidden">
+                                LVMH
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top">
+                        <a href="../06Chanel/index.html">
+                            <img class="brand-image" src="../images/06_Chanel/6Chanel.png" alt="">
+                            <div class="hidden">
+                                CHANEL
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first perfume">
+                        <a href="../07PPR/index.html">
+                            <img class="brand-image" src="../images/07_PPR/7PPR.png" alt="">
+                            <div class="hidden">
+                                PPR
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first second third cos body mens">
+                        <a href="../08Amore_Pacific/index.html">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8Amore_Pacific.png" alt="">
+                            <div class="hidden">
+                                Amore Pacific
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first second mass cos mens ccs health">
+                        <a href="../09LG/index.html">
+                            <img class="brand-image" src="../images/09_LG/9LG.png" alt="">
+                            <div class="hidden">
+                                LG
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second oral health">
+                        <a href="../10Unilever/index.html">
+                            <img class="brand-image" src="../images/10_Unilever/10Unilever.png" alt="">
+                            <div class="hidden">
+                                Unilever
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top first second mass cos">
+                        <a href="../11POLA/index.html">
+                            <img class="brand-image" src="../images/11_POLA/11POLA.png" alt="">
+                            <div class="hidden">
+                                POLA
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top mass cos ccs">
+                        <a href="../12Beiersdorf/index.html">
+                            <img class="brand-image" src="../images/12_Beiersdorf/12Beiersdorf.png" alt="">
+                            <div class="hidden">
+                                Beiersdorf
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+   </div>
+
     <script src="script.js"></script> 
 </body>
+
+
+
