@@ -120,6 +120,13 @@ ul, li {
     width: 250px;
 }
 
+.title{
+    margin-top:100px;
+    margin-bottom:-100px;
+    margin-left:48%;
+    font-family: 'Anton', sans-serif;
+}
+
 #grid-container{
     display: flex;
     grid-column-gap: 40px;
