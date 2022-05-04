@@ -15,8 +15,51 @@
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
 
     <div class="search">
-        <p class="filter">Filter By ▼</p>    
-        <div>
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
             <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
         </div> 
     </div>
@@ -25,7 +68,7 @@
         <div class="grid-container-inner grid">
             <div class="hoverWrapper">
                 <ul id="myUL">
-                    <li class="grid-item">
+                    <li class="grid-item top">
                         <a href="https://intl.helenarubinstein.com/int/">
                             <img class="brand-image" src="../images/04_Loreal/4000Helena_Rubinstein.png" alt="">
                             <div class="hidden">
@@ -33,7 +76,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item top cos"> 
                         <a href="https://www.armani.com/en-us">
                             <img class="brand-image" src="../images/04_Loreal/4001Giorgio_Armani.png" alt="">
                             <div class="hidden">
@@ -41,7 +84,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item top cos">
                         <a href="https://www.ysl.com/en-us">
                             <img class="brand-image" src="../images/04_Loreal/4002Yves_Saint_Laurent.png" alt="">
                             <div class="hidden">
@@ -49,7 +92,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item first">
                         <a href="https://www.lancome-usa.com/">
                             <img class="brand-image" src="../images/04_Loreal/4010Lancome.png" alt="">
                             <div class="hidden">
@@ -57,7 +100,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item first cos"> 
                         <a href="https://www.shuuemura-usa.com/">
                             <img class="brand-image" src="../images/04_Loreal/4011Shu_Uemura.png" alt="">
                             <div class="hidden">
@@ -65,7 +108,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item first ccs">
                         <a href="https://www.skinceuticals.com/">
                             <img class="brand-image" src="../images/04_Loreal/4012Skin_Ceuticals.png" alt="">
                             <div class="hidden">
@@ -73,7 +116,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second">
                         <a href="https://www.kiehls.com/">
                             <img class="brand-image" src="../images/04_Loreal/4020Kiehls.png" alt="">
                             <div class="hidden">
@@ -81,7 +124,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second">
                         <a href="https://www.biotherm.com/">
                             <img class="brand-image" src="../images/04_Loreal/4021Biotherm.png" alt="">
                             <div class="hidden">
@@ -89,7 +132,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second">
                         <a href="https://www.yuesaikan.com/">
                             <img class="brand-image" src="../images/04_Loreal/4022Yue_Sai.png" alt="">
                             <div class="hidden">
@@ -97,7 +140,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third">
                         <a href="https://www.loreal.com/en/">
                             <img class="brand-image" src="../images/04_Loreal/4030Loreal.png" alt="">
                             <div class="hidden">
@@ -105,7 +148,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third">
                         <a href="https://www.garnierusa.com/">
                             <img class="brand-image" src="../images/04_Loreal/4031Garnier.png" alt="">
                             <div class="hidden">
@@ -113,7 +156,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third">
                         <a href="https://www.thebodyshop.com/en-us/">
                             <img class="brand-image" src="../images/04_Loreal/4032The_Body_Shop.png" alt="">
                             <div class="hidden">
@@ -121,7 +164,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item cos">
                         <a href="https://www.maybelline.com/">
                             <img class="brand-image" src="../images/04_Loreal/4053Maybelline.png" alt="">
                             <div class="hidden">
@@ -129,7 +172,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.giorgioarmanibeauty-usa.com/fragrances/">
                             <img class="brand-image" src="../images/04_Loreal/4060Giorgio_Armani_Parfums.PNG" alt="">
                             <div class="hidden">
@@ -137,7 +180,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.ralphlauren.com/women-accessories-fragrance">
                             <img class="brand-image" src="../images/04_Loreal/4061Ralph_Lauren.png" alt="">
                             <div class="hidden">
@@ -145,7 +188,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.macys.com/shop/makeup-and-perfume/perfume/Brand/Cacharel?id=30087">
                             <img class="brand-image" src="../images/04_Loreal/4062Cacharel.png" alt="">
                             <div class="hidden">
@@ -153,7 +196,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://us.viktor-rolf.com/">
                             <img class="brand-image" src="../images/04_Loreal/4063Viktor_Rolf.png" alt="">
                             <div class="hidden">
@@ -161,7 +204,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://us.lorealprofessionnel.com/">
                             <img class="brand-image" src="../images/04_Loreal/4070Loreal_Professional.png" alt="">
                             <div class="hidden">
@@ -169,7 +212,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://www.kerastase-usa.com/">
                             <img class="brand-image" src="../images/04_Loreal/4071Kerastase.png" alt="">
                             <div class="hidden">
@@ -177,7 +220,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://www.loreal.com/en/professional-products-division/matrix/">
                             <img class="brand-image" src="../images/04_Loreal/4072Matrix.png" alt="">
                             <div class="hidden">
@@ -193,7 +236,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item ccs">
                         <a href="https://www.laroche-posay.us/">
                             <img class="brand-image" src="../images/04_Loreal/4091LaRoche_Posay.png" alt="">
                             <div class="hidden">
@@ -201,7 +244,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item oral">
                         <a href="https://www.beautytheshop.com/us/brands/inneov">
                             <img class="brand-image" src="../images/04_Loreal/4100INNEOV.png" alt="">
                             <div class="hidden">

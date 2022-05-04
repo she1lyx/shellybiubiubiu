@@ -50,7 +50,7 @@ function filterSelection(c) {
     element.className = arr1.join(" ");
   }
 
-var btnContainer = document.getElementById("myBtnContainer");
+var btnContainer = document.getElementById("BtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
@@ -64,7 +64,7 @@ for (var i = 0; i < btns.length; i++) {
 
 //Filter Button
 var button = document.getElementById("filter-button");
-var container = document.getElementById("myBtnContainer");
+var container = document.getElementById("BtnContainer");
 var input = document.querySelectorAll("input");
 
 button.onclick = function (e) {

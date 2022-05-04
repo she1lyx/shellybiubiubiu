@@ -15,8 +15,51 @@
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
 
     <div class="search">
-        <p class="filter">Filter By ▼</p>    
-        <div>
+        <button class="filter" id="filter-button">Filter By ▼</button> 
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
             <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
         </div> 
     </div>
@@ -25,7 +68,7 @@
         <div class="grid-container-inner grid">
             <div class="hoverWrapper">
                 <ul id="myUL">
-                    <li class="grid-item">
+                    <li class="grid-item first">
                         <a href="https://www.sk-ii.com/">
                             <img class="brand-image" src="../images/01_P&G/1010SKII.png" alt="">
                             <div class="hidden">
@@ -33,7 +76,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item first"> 
                         <a href="https://www.maxfactor.com/en">
                             <img class="brand-image" src="../images/01_P&G/1011Max_Factor.png" alt="">
                             <div class="hidden">
@@ -41,7 +84,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second">
                         <a href="https://www.olay.com/en-us">
                             <img class="brand-image" src="../images/01_P&G/1020Olay.png" alt="">
                             <div class="hidden">
@@ -49,7 +92,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second">
                         <a href="https://www.illumenaturalskin.com/">
                             <img class="brand-image" src="../images/01_P&G/1021Illume.png" alt="">
                             <div class="hidden">
@@ -57,7 +100,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item second"> 
                         <a href="https://always.com/en-us">
                             <img class="brand-image" src="../images/01_P&G/1022Always.png" alt="">
                             <div class="hidden">
@@ -65,7 +108,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second">
                         <a href="https://en.wikipedia.org/wiki/Zest_(brand)">
                             <img class="brand-image" src="../images/01_P&G/1023Zest.png" alt="">
                             <div class="hidden">
@@ -73,7 +116,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second cos perfume">
                         <a href="https://annasui.com/">
                             <img class="brand-image" src="../images/01_P&G/1024Anna_Sui.png" alt="">
                             <div class="hidden">
@@ -81,7 +124,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item cos">
                         <a href="https://www.covergirl.com/">
                             <img class="brand-image" src="../images/01_P&G/1051Cover_Girl.png" alt="">
                             <div class="hidden">
@@ -89,7 +132,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.hugoboss.com/us/cologne-men/">
                             <img class="brand-image" src="../images/01_P&G/1060Hugo_Boss.png" alt="">
                             <div class="hidden">
@@ -97,7 +140,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.lacoste.com/us/lacoste/men/accessories/fragrance/">
                             <img class="brand-image" src="../images/01_P&G/1061Lacoste.png" alt="">
                             <div class="hidden">
@@ -105,7 +148,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.escada-fragrances.com/en-us/">
                             <img class="brand-image" src="../images/01_P&G/1063Escada.png" alt="">
                             <div class="hidden">
@@ -113,7 +156,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.dunhill.com/us/men/fragrance">
                             <img class="brand-image" src="../images/01_P&G/1064Dunhill.png" alt="">
                             <div class="hidden">
@@ -121,7 +164,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.valentino.com/en-us/women/fragrances">
                             <img class="brand-image" src="../images/01_P&G/1065Valentino.png" alt="">
                             <div class="hidden">
@@ -129,7 +172,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.fragrantica.com/designers/Lanvin.html">
                             <img class="brand-image" src="../images/01_P&G/1066Lanvin.png" alt="">
                             <div class="hidden">
@@ -137,7 +180,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.paulsmith.com/us/womens/accessories/fragrance">
                             <img class="brand-image" src="../images/01_P&G/1067Paul_Smith.png" alt="">
                             <div class="hidden">
@@ -145,7 +188,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://www.rejoice.my/en-my">
                             <img class="brand-image" src="../images/01_P&G/1070Rejoice.png" alt="">
                             <div class="hidden">
@@ -153,7 +196,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://headandshoulders.com/en-us">
                             <img class="brand-image" src="../images/01_P&G/1071Head_Shoulders.png" alt="">
                             <div class="hidden">
@@ -161,7 +204,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://pantene.com/en-us">
                             <img class="brand-image" src="../images/01_P&G/1072Pantene.png" alt="">
                             <div class="hidden">
@@ -169,7 +212,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="http://www.irunyan.net/">
                             <img class="brand-image" src="../images/01_P&G/1073Run_Yan.png" alt="">
                             <div class="hidden">
@@ -177,7 +220,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://www.clairol.com/en-US/home">
                             <img class="brand-image" src="../images/01_P&G/1074Clairol.png" alt="">
                             <div class="hidden">
@@ -185,7 +228,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://safeguardna.com/en-us/safeguard-america/about-us">
                             <img class="brand-image" src="../images/01_P&G/1075Safeguard.png" alt="">
                             <div class="hidden">
@@ -193,7 +236,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item body">
                         <a href="https://www.wella.com/professional/en-US/home">
                             <img class="brand-image" src="../images/01_P&G/1076Wella.png" alt="">
                             <div class="hidden">

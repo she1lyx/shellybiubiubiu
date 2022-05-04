@@ -13,4 +13,185 @@
 
 <body>
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
+
+    <div class="search">
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
+            <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
+        </div> 
+    </div>
+
+    <div id="grid-container">
+        <div class="grid-container-inner grid">
+            <div class="hoverWrapper">
+                <ul id="myUL">
+                    <li class="grid-item top">
+                        <a href="https://us.amorepacific.com/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8000Amore_Pacific.png" alt="">
+                            <div class="hidden">
+                                Amore Pacific
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top"> 
+                        <a href="https://us.sulwhasoo.com/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8001Sulwhasoo.png" alt="">
+                            <div class="hidden">
+                                Sulwhasoo
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item top">
+                        <a href="https://www.hera.com/int/en/index.html">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8010HERA.png" alt="">
+                            <div class="hidden">
+                                HERA
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second">
+                        <a href="https://www.iope.com/int/en/index.html">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8020IOPE.png" alt="">
+                            <div class="hidden">
+                                IOPE
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second"> 
+                        <a href="https://www.apgroup.com/int/en/brands/lirikos.html">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8021LIRIKOS.png" alt="">
+                            <div class="hidden">
+                                LIRIKOS
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second">
+                        <a href="https://veriteskincare.com/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8022VERITE.png" alt="">
+                            <div class="hidden">
+                                VERITE
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second">
+                        <a href="https://us.laneige.com/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8023Laneige.png" alt="">
+                            <div class="hidden">
+                                Laneige
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item third cos">
+                        <a href="https://www.mamonde.com/int/en/index.html">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8030Mamonde.png" alt="">
+                            <div class="hidden">
+                                Mamonde
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item third cos">
+                        <a href="https://www.etude.com/int/en/index.php/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8031Etude_House.png" alt="">
+                            <div class="hidden">
+                                Etude House
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item third cos">
+                        <a href="https://us.innisfree.com/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8032Innisfree.png" alt="">
+                            <div class="hidden">
+                                Innisfree
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item cos">
+                        <a href="https://www.espoir.com/en/main.do">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8052Espoir.png" alt="">
+                            <div class="hidden">
+                                Espoir
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item body">
+                        <a href="https://www.ryo.com/my/en/products/category/shampoo_conditioner/shampoo_conditioner.html">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8070Ryo.png" alt="">
+                            <div class="hidden">
+                                Ryo
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item body">
+                        <a href="https://www.apgroup.com/int/en/brands/mise-en-scene.html">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8071Mise_En_Scene.png" alt="">
+                            <div class="hidden">
+                                Mise En Scene
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item perfume">
+                        <a href="https://www.lolitalempicka.paris/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8080Lolita_Lempicka.png" alt="">
+                            <div class="hidden">
+                                Lolita Lempicka
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item perfume">
+                        <a href="http://castelbajac.com/">
+                            <img class="brand-image" src="../images/08_Amore_Pacific/8081Castel_Bajac.png" alt="">
+                            <div class="hidden">
+                                Castel Bajac
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </div>
+
+    <script src="script.js"></script> 
 </body>

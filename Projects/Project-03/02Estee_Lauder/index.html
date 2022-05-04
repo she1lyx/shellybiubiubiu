@@ -15,8 +15,51 @@
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
 
     <div class="search">
-        <p class="filter">Filter By ▼</p>    
-        <div>
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
             <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
         </div> 
     </div>
@@ -25,7 +68,7 @@
         <div class="grid-container-inner grid">
             <div class="hoverWrapper">
                 <ul id="myUL">
-                    <li class="grid-item">
+                    <li class="grid-item top">
                         <a href="https://www.cremedelamer.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2000La_Mer.jpg" alt="">
                             <div class="hidden">
@@ -33,7 +76,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item top cos"> 
                         <a href="https://www.tomford.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2001Tom_Ford.png" alt="">
                             <div class="hidden">
@@ -41,7 +84,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item first">
                         <a href="https://www.esteelauder.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2010Estee_Lauder.png" alt="">
                             <div class="hidden">
@@ -49,7 +92,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item first cos">
                         <a href="https://www.bobbibrowncosmetics.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2011Bobbi_Brown.png" alt="">
                             <div class="hidden">
@@ -57,7 +100,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item second"> 
                         <a href="https://www.clinique.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2020Clinique.png" alt="">
                             <div class="hidden">
@@ -65,7 +108,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item second cos">
                         <a href="https://www.maccosmetics.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2021MAC.png" alt="">
                             <div class="hidden">
@@ -73,7 +116,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third">
                         <a href="https://www.stilacosmetics.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2030Stila.png" alt="">
                             <div class="hidden">
@@ -81,7 +124,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third">
                         <a href="https://www.origins.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2031Origins.png" alt="">
                             <div class="hidden">
@@ -89,7 +132,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third">
                         <a href="https://www.amazon.com/Makeup-Prescriptives-Beauty-Personal-Care/s?rh=n%3A11058281%2Cp_4%3APrescriptives">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2032Prescriptives.png" alt="">
                             <div class="hidden">
@@ -97,7 +140,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third">
                         <a href="https://www.aveda.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2033Aveda.png" alt="">
                             <div class="hidden">
@@ -105,7 +148,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item third perfume">
                         <a href="https://www.jomalone.com/">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2034Jo_Malone.png" alt="">
                             <div class="hidden">
@@ -113,7 +156,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://usa.tommy.com/en/men-fragrance-sunglasses">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2060Tommy_Hilfiger.png" alt="">
                             <div class="hidden">
@@ -121,7 +164,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.perfume.com/donna-karan">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2061DKNY.png" alt="">
                             <div class="hidden">
@@ -129,7 +172,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.elcompanies.com/en/our-brands/aramis">
                             <img class="brand-image" src="../images/02_Estée_Lauder/2062Aramis.png" alt="">
                             <div class="hidden">

@@ -13,4 +13,73 @@
 
 <body>
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
+
+    <div class="search">
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
+            <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
+        </div> 
+    </div>
+
+    <div id="grid-container">
+        <div class="grid-container-inner grid">
+            <div class="hoverWrapper">
+                <ul id="myUL">
+                    <li class="grid-item top">
+                        <a href="https://www.chanel.com/us/">
+                            <img class="brand-image" src="../images/06_Chanel/6Chanel.png" alt="">
+                            <div class="hidden">
+                                Chanel
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </div>
+
+    <script src="script.js"></script> 
 </body>

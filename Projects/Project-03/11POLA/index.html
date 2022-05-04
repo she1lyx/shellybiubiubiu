@@ -13,4 +13,129 @@
 
 <body>
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
+
+    <div class="search">
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
+            <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
+        </div> 
+    </div>
+
+    <div id="grid-container">
+        <div class="grid-container-inner grid">
+            <div class="hoverWrapper">
+                <ul id="myUL">
+                    <li class="grid-item top"> 
+                        <a href="https://www.pola.com/">
+                            <img class="brand-image" src="../images/11_POLA/11000POLA.png" alt="">
+                            <div class="hidden">
+                                POLA
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item first">
+                        <a href="https://ichibanm.com/collections/itrim">
+                            <img class="brand-image" src="../images/11_POLA/11010ITRIM.png" alt="">
+                            <div class="hidden">
+                                ITRIM
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second">
+                        <a href="https://www.threecosmetics.com/en/category/skincare/">
+                            <img class="brand-image" src="../images/11_POLA/11020THREE.png" alt="">
+                            <div class="hidden">
+                                THREE
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second"> 
+                        <a href="https://www.jurlique.com/us">
+                            <img class="brand-image" src="../images/11_POLA/11021Jurlique.png" alt="">
+                            <div class="hidden">
+                                Jurlique
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item mass">
+                        <a href="https://www.po-holdings.co.jp/en/">
+                            <img class="brand-image" src="../images/11_POLA/11040ORBIS.png" alt="">
+                            <div class="hidden">
+                                ORBIS
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item mass">
+                        <a href="https://www.h2oplus.com/">
+                            <img class="brand-image" src="../images/11_POLA/11041H2O.png" alt="">
+                            <div class="hidden">
+                                H2O+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item mass">
+                        <a href="https://www.tofusecret.com/pdc-pola-daily-cosme/">
+                            <img class="brand-image" src="../images/11_POLA/11042PDC.png" alt="">
+                            <div class="hidden">
+                                Pola Daily Cosme
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item cos">
+                        <a href="https://www.amplitude-beauty.com/shop/default.aspx">
+                            <img class="brand-image" src="../images/11_POLA/11050Amplitude.PNG" alt="">
+                            <div class="hidden">
+                                Amplitude
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </div>
+
+    <script src="script.js"></script> 
 </body>

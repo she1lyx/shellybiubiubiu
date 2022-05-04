@@ -13,4 +13,177 @@
 
 <body>
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
+
+    <div class="search">
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
+            <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
+        </div> 
+    </div>
+
+    <div id="grid-container">
+        <div class="grid-container-inner grid">
+            <div class="hoverWrapper">
+                <ul id="myUL">
+                    <li class="grid-item second"> 
+                        <a href="https://www.elizabetharden.com/">
+                            <img class="brand-image" src="../images/10_Unilever/10020Elizabeth_Arden.png" alt="">
+                            <div class="hidden">
+                                Elizabeth Arden
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item oral">
+                        <a href="https://www.lipton.com/us/en/home.html">
+                            <img class="brand-image" src="../images/10_Unilever/10100Lipton.png" alt="">
+                            <div class="hidden">
+                                Lipton
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item oral">
+                        <a href="https://www.unilever.com.cn/brands/foods-refreshment/walls/">
+                            <img class="brand-image" src="../images/10_Unilever/10101He_Lu_Xue.png" alt="">
+                            <div class="hidden">
+                                Wall's
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item oral"> 
+                        <a href="https://m.jingxi.com/mshop/SearchList?venderId=10102395&shopId=946958&searchType=category&keyword=11132873&_fd=jx&jxsid=16140384000260833673">
+                            <img class="brand-image" src="../images/10_Unilever/10102Jing_Hua_Cha.png" alt="">
+                            <div class="hidden">
+                                Jing Hua Cha
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item oral">
+                        <a href="https://www.peanutbutter.com/">
+                            <img class="brand-image" src="../images/10_Unilever/10103Skippy.png" alt="">
+                            <div class="hidden">
+                                Skippy
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item oral">
+                        <a href="https://www.hellmanns.com/us/en/home.html">
+                            <img class="brand-image" src="../images/10_Unilever/10104Hellmanns.png" alt="">
+                            <div class="hidden">
+                                Hellmanns
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.unilever.com/brands/beauty-personal-care/lux/">
+                            <img class="brand-image" src="../images/10_Unilever/10110Lux.png" alt="">
+                            <div class="hidden">
+                                Lux
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.unilever.com.cn/brands/beauty-personal-care/hazeline/">
+                            <img class="brand-image" src="../images/10_Unilever/10111Hazeline.png" alt="">
+                            <div class="hidden">
+                                Hazeline
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.unileverusa.com/brands/beauty-personal-care/ponds/">
+                            <img class="brand-image" src="../images/10_Unilever/10112Ponds.png" alt="">
+                            <div class="hidden">
+                                Ponds
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.unilever.com/brands/home-care/omo/">
+                            <img class="brand-image" src="../images/10_Unilever/10113OMO.png" alt="">
+                            <div class="hidden">
+                                OMO
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item oral">
+                        <a href="https://zh.m.wikipedia.org/zh-hans/%E4%B8%AD%E5%8D%8E%E9%A6%99%E7%83%9F">
+                            <img class="brand-image" src="../images/10_Unilever/10114Chong_Hua.png" alt="">
+                            <div class="hidden">
+                                Chong Hua
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.jd.com/pinpai/109403.html">
+                            <img class="brand-image" src="../images/10_Unilever/10115Gienor.png" alt="">
+                            <div class="hidden">
+                                Gienor
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.vaseline.com/us/en">
+                            <img class="brand-image" src="../images/10_Unilever/10116Vaseline.png" alt="">
+                            <div class="hidden">
+                                Vaseline
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.unilever.com/brands/home-care/comfort/">
+                            <img class="brand-image" src="../images/10_Unilever/10117Comfort.png" alt="">
+                            <div class="hidden">
+                                Comfort
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </div>
+
+    <script src="script.js"></script> 
 </body>

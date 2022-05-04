@@ -23,9 +23,65 @@ body{
     display: flex;
 }
 
+.filter{
+    margin-right: 10px;
+    font-family: 'Oswald', sans-serif;
+    background: darkred;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border: 0;
+    outline: 0;
+    text-align: left;
+    min-width: 179px;
+    display: inline-flex;
+    justify-content: center;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+  
+li {
+    padding: 0.5em;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.filters {
+    width: 130px;
+    box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.3);
+    padding: 1.5em;
+    position: absolute;
+}
+
+.filters_list{
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
+
+.filters_list li {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    padding-bottom: 0.5em;
+    line-height: 0;
+    justify-content: center;
+}
+
+.filters:not(.filters--active) {
+    display: none;
+}
+
 .searchBar{
     margin-left:20px;
-    margin-top:-5px;
+    margin-top:-8px;
 }
 
 .searchBar {
@@ -73,62 +129,6 @@ body{
 .searchBar > input:focus,
 .searchBar > input:not(:placeholder-shown) {
     width: 250px;
-}
-
-.filter{
-    margin-right: 10px;
-    font-family: 'Oswald', sans-serif;
-    background: darkred;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    border: 0;
-    outline: 0;
-    text-align: left;
-    min-width: 179px;
-    display: inline-flex;
-    justify-content: center;
-    color: #f5f5f5;
-    cursor: pointer;
-}
-
-ul {
-    list-style: none;
-}
-
-ul, li {
-    margin: 0;
-    padding: 0;
-}
-  
-li {
-    padding: 0.5em;
-}
-
-.filters {
-    width: 130px;
-    box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.3);
-    padding: 1.5em;
-    position: absolute;
-}
-
-.filters_list{
-    margin-top: 20px;
-    margin-bottom: -15px;
-}
-
-.filters_list li {
-    display: flex;
-    align-items: center;
-    user-select: none;
-    padding-bottom: 0.5em;
-    line-height: 0;
-    justify-content: center;
-}
-
-.filters:not(.filters--active) {
-    display: none;
 }
 
 #grid-container{

@@ -13,4 +13,233 @@
 
 <body>
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
+
+    <div class="search">
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
+            <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
+        </div> 
+    </div>
+
+    <div id="grid-container">
+        <div class="grid-container-inner grid">
+            <div class="hoverWrapper">
+                <ul id="myUL">
+                    <li class="grid-item top">
+                        <a href="https://whoo.sg/">
+                            <img class="brand-image" src="../images/09_LG/9000Whoo.png" alt="">
+                            <div class="hidden">
+                                Whoo
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item first"> 
+                        <a href="https://sum37.com.sg/">
+                            <img class="brand-image" src="../images/09_LG/9010Sum37.png" alt="">
+                            <div class="hidden">
+                                Sum37
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item first">
+                        <a href="https://www.ecosmeticworld.com/collections/ohui">
+                            <img class="brand-image" src="../images/09_LG/9011Ohui.png" alt="">
+                            <div class="hidden">
+                                Ohui
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item first">
+                        <a href="https://belifusa.com/">
+                            <img class="brand-image" src="../images/09_LG/9012Belif.png" alt="">
+                            <div class="hidden">
+                                Belif
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second"> 
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=1&bid1=C054">
+                            <img class="brand-image" src="../images/09_LG/9020ISAKNOX.png" alt="">
+                            <div class="hidden">
+                                ISA KNOX
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second">
+                        <a href="http://www.cnwear.com/en/e2612.htm">
+                            <img class="brand-image" src="../images/09_LG/9021DeBon.png" alt="">
+                            <div class="hidden">
+                                DeBon
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item second">
+                        <a href="http://www.sooryehan.co.kr/index.jsp">
+                            <img class="brand-image" src="../images/09_LG/9022Sooryehan.png" alt="">
+                            <div class="hidden">
+                                Sooryehan
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item mass">
+                        <a href="https://www.thefaceshop.com.my/">
+                            <img class="brand-image" src="../images/09_LG/9040The_Face_Shop.png" alt="">
+                            <div class="hidden">
+                                The Face Shop
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item mass">
+                        <a href="http://www.lghnh.com/english/aboutus/04_01.html">
+                            <img class="brand-image" src="../images/09_LG/9041HERCYNA.png" alt="">
+                            <div class="hidden">
+                                HERCYNA
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item mass">
+                        <a href="https://ec21.en.koreadepart.com/cosmetics-brand/LACVERT/">
+                            <img class="brand-image" src="../images/09_LG/9042LACVERT.png" alt="">
+                            <div class="hidden">
+                                LACVERT
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item cos">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=1&bid1=C059">
+                            <img class="brand-image" src="../images/09_LG/9050Cathycat.png" alt="">
+                            <div class="hidden">
+                                Cathycat
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item cos">
+                        <a href="http://www.myvov.com/eng/product/list.jsp?tid2=04">
+                            <img class="brand-image" src="../images/09_LG/9051VOV.png" alt="">
+                            <div class="hidden">
+                                VOV
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item mens">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=1&bid1=C035">
+                            <img class="brand-image" src="../images/09_LG/9080VONIN.png" alt="">
+                            <div class="hidden">
+                                VONIN
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item ccs">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=1&bid1=C062">
+                            <img class="brand-image" src="../images/09_LG/9090Care_Zone.png" alt="">
+                            <div class="hidden">
+                                Care Zone
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item ccs">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=1&bid1=C068">
+                            <img class="brand-image" src="../images/09_LG/9091Frostines.png" alt="">
+                            <div class="hidden">
+                                Frostines
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item ccs">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=1&bid1=H078">
+                            <img class="brand-image" src="../images/09_LG/9092Beyond.png" alt="">
+                            <div class="hidden">
+                                Beyond
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=2&bid1=H056">
+                            <img class="brand-image" src="../images/09_LG/9110Elastine.png" alt="">
+                            <div class="hidden">
+                                Elastine
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=2&bid1=H095">
+                            <img class="brand-image" src="../images/09_LG/9111ReEn.png" alt="">
+                            <div class="hidden">
+                                ReEn
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=2&bid1=H113">
+                            <img class="brand-image" src="../images/09_LG/9112On_The_Body.PNG" alt="">
+                            <div class="hidden">
+                                On: The Body
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="http://www.lghnh.com/global/brand/detail.jsp?gbn=2&bid1=H021">
+                            <img class="brand-image" src="../images/09_LG/9113Perioe.png" alt="">
+                            <div class="hidden">
+                                Perioe
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid-item health">
+                        <a href="https://www.sofybodyfit.co.kr/eng/product/day07.asp">
+                            <img class="brand-image" src="../images/09_LG/9114Sofy.png" alt="">
+                            <div class="hidden">
+                                Sofy
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </div>
+
+    <script src="script.js"></script> 
 </body>

@@ -15,8 +15,51 @@
     <div><a class="back" href="../00groups/index.html">Explore More Groups</a></div>
 
     <div class="search">
-        <p class="filter">Filter By ▼</p>    
-        <div>
+        <button class="filter" id="filter-button">Filter By ▼</button>
+        <div id="BtnContainer" class="filters">
+            <ul class="filters_list">
+                <li>
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('top')"> Top Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('first')"> First Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('second')"> Second Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('third')"> Third Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mass')"> Mass Tier</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('cos')"> Cosmetics</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('perfume')"> Perfume</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('body')"> Body & Hair</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('mens')"> Men's</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('ccs')"> Cosmeceuticals</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('oral')"> Oral / Food</button>
+                </li>
+                <li>
+                    <button class="btn" onclick="filterSelection('health')"> Health</button>
+                </li>
+            </ul>
+        </div>
+        <div class="searchBar">
             <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Your Brands..."> 
         </div> 
     </div>
@@ -25,7 +68,7 @@
         <div class="grid-container-inner grid">
             <div class="hoverWrapper">
                 <ul id="myUL">
-                    <li class="grid-item">
+                    <li class="grid-item top">
                         <a href="https://us.louisvuitton.com/eng-us/homepage">
                             <img class="brand-image" src="../images/05_LVMH/5000Louis_Vuitton.png" alt="">
                             <div class="hidden">
@@ -33,7 +76,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item top cos perfume"> 
                         <a href="https://www.dior.com/en_us">
                             <img class="brand-image" src="../images/05_LVMH/5001Dior.png" alt="">
                             <div class="hidden">
@@ -41,7 +84,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item top">
                         <a href="https://www.tiffany.com/">
                             <img class="brand-image" src="../images/05_LVMH/5002Tiffany_Co.png" alt="">
                             <div class="hidden">
@@ -49,7 +92,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item top cos perfume">
                         <a href="https://www.givenchy.com/us/en-US/homepage">
                             <img class="brand-image" src="../images/05_LVMH/5003Givenchy.png" alt="">
                             <div class="hidden">
@@ -57,7 +100,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item"> 
+                    <li class="grid-item top cos perfume"> 
                         <a href="https://www.guerlain.com/us/en-us#anchor-section-0">
                             <img class="brand-image" src="../images/05_LVMH/5004Guerlain.png" alt="">
                             <div class="hidden">
@@ -65,7 +108,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item top">
                         <a href="https://www.fendi.com/us-en/">
                             <img class="brand-image" src="../images/05_LVMH/5005Fendi.png" alt="">
                             <div class="hidden">
@@ -73,7 +116,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item top">
                         <a href="https://www.celine.com/en-us/home">
                             <img class="brand-image" src="../images/05_LVMH/5006CELINE.png" alt="">
                             <div class="hidden">
@@ -81,7 +124,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item top">
                         <a href="https://www.bulgari.com/en-us/">
                             <img class="brand-image" src="../images/05_LVMH/5007BULGARI.png" alt="">
                             <div class="hidden">
@@ -89,7 +132,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item first cos perfume body">
                         <a href="https://www.fresh.com/us/home">
                             <img class="brand-image" src="../images/05_LVMH/5010Fresh.png" alt="">
                             <div class="hidden">
@@ -97,7 +140,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item first perfume body">
                         <a href="https://www.kenzo.com/eu/en/home">
                             <img class="brand-image" src="../images/05_LVMH/5011KENZO.png" alt="">
                             <div class="hidden">
@@ -105,7 +148,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item first">
                         <a href="https://www.loewe.com/usa/en/home">
                             <img class="brand-image" src="../images/05_LVMH/5012LOEWE.png" alt="">
                             <div class="hidden">
@@ -113,7 +156,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item cos">
                         <a href="https://www.benefitcosmetics.com/en-us">
                             <img class="brand-image" src="../images/05_LVMH/5054Benefit.png" alt="">
                             <div class="hidden">
@@ -121,7 +164,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item cos">
                         <a href="https://www.makeupforever.com/us/en">
                             <img class="brand-image" src="../images/05_LVMH/5055Make_Up_For_Ever.png" alt="">
                             <div class="hidden">
@@ -129,7 +172,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item cos">
                         <a href="https://www.sephora.com/">
                             <img class="brand-image" src="../images/05_LVMH/5056Sephora.png" alt="">
                             <div class="hidden">
@@ -137,7 +180,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="grid-item">
+                    <li class="grid-item perfume">
                         <a href="https://www.acquadiparma.com/countries/">
                             <img class="brand-image" src="../images/05_LVMH/5065Acqua_Di_Parma.png" alt="">
                             <div class="hidden">
